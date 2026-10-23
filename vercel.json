@@ -1,0 +1,25 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'none'; img-src 'self'; style-src 'sha256-sVkqs5LAc0vTNuUTj8SJZGx3nCEHH/w5vHjrYeIK5BM='; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+        }
+      ]
+    }
+  ]
+}
